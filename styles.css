@@ -38,7 +38,7 @@ body {
 
 .img-container {
   flex-basis: 50%;
-  background-image: url(/images/image-product-desktop.jpg);
+  background-image: url(./images/image-product-desktop.jpg);
   background-size: cover;
   background-position: center;
 }
