@@ -1,0 +1,139 @@
+/* font-family: 'Fraunces', serif;
+font-family: 'Montserrat', sans-serif; */
+
+:root {
+  --primaryFontFamily: 'Fraunces', serif;
+  --secondaryFontFamily: 'Montserrat', sans-serif;
+  --darkCyan: hsl(158, 36%, 37%);
+  --veryDarkCyan: hsl(212, 21%, 14%);
+  --darkGrayishBlue: hsl(228, 12%, 48%);
+  --cream: hsl(30, 38%, 92%);
+  --white: hsl(0, 0%, 100%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--cream);
+}
+
+.main {
+  height: 95vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  display: flex;
+  height: 400px;
+  flex-basis: 40%;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.img-container {
+  flex-basis: 50%;
+  background-image: url(/images/image-product-desktop.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.img {
+  height: 400px;
+  width: 100%;
+}
+
+.info-container {
+  flex-basis: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: var(--white);
+  align-items: flex-start;
+  padding: 20px 30px;
+}
+
+.info,
+.old-prize,
+.category {
+  font-family: var(--secondaryFontFamily);
+  color: var(--darkGrayishBlue);
+  font-weight: 500;
+}
+
+.category {
+  letter-spacing: 5px;
+}
+
+.name {
+  font-family: var(--primaryFontFamily);
+  line-height: 2rem;
+}
+
+.info {
+  font-size: 14px;
+}
+
+.current-prize {
+  font-family: var(--primaryFontFamily);
+  font-size: 2rem;
+  color: var(--darkCyan);
+}
+
+.old-prize {
+  font-size: 10px;
+  text-decoration: line-through;
+  margin-left: 30px;
+  vertical-align: 5px;
+}
+
+.btn-container {
+  width: 100%;
+}
+
+.icon {
+  position: relative;
+  top: 3px;
+}
+
+.btn {
+  background-color: var(--darkCyan);
+  border: none;
+  border-radius: 5px;
+  color: hsl(0, 0%, 100%);
+  padding: 20px 30px;
+  font-family: var(--secondaryFontFamily);
+  font-weight: 700;
+  width: 100%;
+}
+
+.btn:hover {
+  background-color: var(--veryDarkCyan);
+}
+
+@media screen and (max-width: 376px) {
+  .card {
+    display: flex;
+    flex-direction: column;
+    height: 85vh;
+    flex-basis: 90%;
+    border-radius: 15px;
+    overflow: hidden;
+  }
+  .info-container {
+    flex-basis: 60%;
+    justify-content: space-evenly;
+    padding: 10px 30px;
+  }
+  .img-container {
+    flex-basis: 40%;
+  }
+  .current-prize {
+    margin-top: 1.5rem;
+  }
+}
