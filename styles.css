@@ -63,7 +63,9 @@ body {
 
 .name {
   font-family: var(--primaryFontFamily);
-  font-size: 3rem;
+  font-size: 3.1rem;
+  text-align: left;
+  word-spacing: 1px;
   margin-bottom: 3rem;
   line-height: 1;
 }
