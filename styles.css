@@ -135,6 +135,6 @@ body {
   .img {
     height: 23rem;
     width: 100%;
-    content: url(/images/image-product-mobile.jpg);
+    content: url(images/image-product-mobile.jpg);
   }
 }
